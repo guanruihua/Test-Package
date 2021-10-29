@@ -1,0 +1,166 @@
+@header-h: 60px;
+@font-color: #fff;
+@select-color: #dc4257;
+
+.home-content {
+  display: grid;
+  grid-template-columns: 200px auto;
+  overflow: hidden;
+
+  // 菜单栏
+  .home-content-aside-menu {
+    z-index: 999;
+    display: inline-block;
+    width: 200px;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    background: url(../../assets/resource/image/sider.png) no-repeat 60% 80%, linear-gradient(40deg, #c4394c 20%, #c4394c);
+
+
+    // 侧栏logo
+    .logo {
+      width: 200px;
+      height: @header-h;
+      background-color: #c4394c;
+      padding: 12px 24px;
+
+      img {
+        width: 152px;
+        height: 37px;
+      }
+    }
+
+    .main-menu>.hiddenBox {
+      width: 100%;
+      height: 100px;
+    }
+    .main-menu{
+      backdrop-filter: blur(4px);
+    }
+    // 侧栏菜单树
+    .ant-menu {
+      color: @font-color;
+      background: rgba(0, 0, 0, 0);
+      // background: rgb(0, 0, 0);
+
+      .ant-menu-submenu {
+
+        .ant-menu-submenu-title>i.ant-menu-submenu-arrow,
+        .ant-menu-submenu-title>span {
+          color: #fff;
+        }
+      }
+
+      .ant-menu-item {
+        background-color: inherit;
+        color: @font-color;
+
+        .ant-menu-submenu-selected,
+        .ant-menu-item-selected {
+          background-color: #dc4257;
+        }
+
+        .ant-menu-title-content>a>span {
+          color: @font-color;
+        }
+      }
+
+      .ant-menu-item-selected {
+        background-color: #dc4257;
+      }
+
+    }
+
+    .ant-menu-inline,
+    .ant-menu-vertical,
+    .ant-menu-vertical-left {
+      border-right: none;
+    }
+
+    // 侧栏用户相关框
+    .user {
+      position: fixed;
+      left: 0;
+      bottom: -3px;
+      width: 199px;
+      border-radius: 0;
+      line-height: 44px;
+      height: 44px;
+      border: none;
+      text-align: center;
+      z-index: 99999;
+
+      &.ant-menu {
+        border: none;
+      }
+
+      .ant-menu-item {
+        z-index: 99999;
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: #6f1824;
+        color: rgba(255, 255, 255, 0.65) !important;
+
+        &.ant-menu-item-active {
+          background-color: #dc4257;
+        }
+
+        .ant-menu-title-content {
+          margin: 0;
+        }
+      }
+
+      .user-logo {
+        display: block;
+        border: 1px solid;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        line-height: 32px;
+        font-size: 25px;
+      }
+    }
+  }
+
+  // header 和 content
+  .home-content-main {
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+
+    .home-content-main-header {
+      min-height: @header-h;
+      max-height: @header-h;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .home-content>div {
+      padding: 14px 14px 54px;
+    }
+
+    .home-content .home-content-space {
+      height: 54px;
+    }
+  }
+}
+
+ul.userDropDown.ant-dropdown-menu.ant-dropdown-menu-root {
+  background-color: #dc4257;
+
+  .ant-dropdown-menu-title-content,
+  .ant-dropdown-menu-item-active {
+    color: rgba(255, 255, 255, 0.65) !important;
+  }
+
+  .ant-dropdown-menu-item-active {
+    color: #dc4257;
+    background-color: #e36879;
+  }
+}

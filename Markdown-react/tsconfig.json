@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "module": "es6",
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "baseUrl": "./",
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        // "baseUrl": "src",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ],
+        },
+        "plugins": [
+            {
+                "name": "typescript-plugin-css-modules"
+            }
+        ]
+    },
+    "include": [
+        "./src/**/*",
+    ],
+    "exclude": [
+        "./tsconfig.json"
+    ]
+}
