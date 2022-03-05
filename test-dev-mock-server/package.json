@@ -1,0 +1,17 @@
+{
+  "name": "test-dev-mock-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "rh-dev-mock-server": "^0.0.12"
+  },
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ruihuag",
+  "license": "ISC"
+}

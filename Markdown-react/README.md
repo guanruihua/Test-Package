@@ -1,4 +1,11 @@
 # 说明
+
+## markdown
+markdown
+
+- [react-markdown - npm (npmjs.com)](https://www.npmjs.com/package/react-markdown)
+- [remarkjs/remark-gfm: remark plugin to support GFM (autolink literals, footnotes, strikethrough, tables, tasklists) (github.com)](https://github.com/remarkjs/remark-gfm)
+
 ## 修改须知
 
 ### 路由组件传参
