@@ -1,0 +1,20 @@
+{
+  "name": "regexp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rh-js-methods": "^2.1.0",
+    "rh-test": "^0.0.15"
+  },
+  "devDependencies": {
+    "rh-test": "^0.0.15"
+  }
+}
