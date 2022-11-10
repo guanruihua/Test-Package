@@ -3,4 +3,3 @@
 
 ### 使用moment en/ zh-cn 之外的包都需要修改 webpack的配置
 > `new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /zh-cn|en/)`
-> 在最后添加你需要使用的包
